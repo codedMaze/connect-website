@@ -41,13 +41,16 @@ const Navbar = ({ children }) => {
         {menuBtn && (
           <div className="fixed h-full left-0 top-0 bg-white w-full z-[4] overflow-hidden">
             <div className="flex justify-between items-center shadow-mobile-shadow">
-              <img
-                src={logo}
-                alt="kurnect logo"
-                width={"91px"}
-                height={"25px"}
-                className="my-[18px] ml-6"
-              />
+              <div>
+                <NavLink to={"/"}>
+                  <img
+                    src={logo}
+                    alt="kurnect logo"
+                    width={"91px"}
+                    height={"25px"}
+                  />
+                </NavLink>
+              </div>
               <div onClick={navHandler} className="block md:hidden mr-6">
                 {menuBtn ? (
                   <MdOutlineClose size={22} />

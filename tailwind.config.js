@@ -20,6 +20,9 @@ module.exports = {
         "light-gray": "#F7F7F7",
         "half-transparent": "rgba(0, 0, 0, 0.5)",
       },
+      backgroundImage: {
+        map: "url('/src/asset/path5406.png')",
+      },
     },
   },
   plugins: [],
